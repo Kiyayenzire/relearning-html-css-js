@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  min-height: 200vh;
+}
+
+.outer-container {
+  border: 3px dashed #555;
+  width: 75vw;
+  height: 85vh;
+  margin: 40px auto;
+  position: relative;
+}
+
+.inner-container {
+  border: 2px solid blue;
+  width: 40vw;
+  height: 50vh;
+  margin: 200px auto;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  color: rgb(53, 80, 104);
+  padding: 1rem;
+}
+
+.absolute {
+  background-color: blue;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}

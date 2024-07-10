@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+/* || RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || VARIABLES */
+:root {
+  /* FONT */
+  --FS: 1.5rem;
+  --FS-XL: 3rem;
+  /* COLOR */
+  --BGCOLOR: pink;
+  --ALT-BGCOLOR: rgb(60, 255, 0);
+  --RADIO-COLOR: whitesmoke;
+  --LIGHT-COLOR: whitesmoke;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* || UTILITY CLASSES */
+.nowrap {
+  white-space: nowrap; /*(to avoid breaking the B Dimples name, always on the same line)*/
+}
+
+/* || GENERAL SYTLES  */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 1.5rem "Poppins", sans-serif;
+  min-height: 100vh;
+  background-color: papayawhip;
+  background-image: radial-gradient(whitesmoke, var(--BGCOLOR));
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  position: sticky;
+  background-color: var(--ALT-BGCOLOR);
+  color: cornsilk;
+  text-align: center;
+}
+
+header {
+  top: 0;
+}
+
+nav {
+  background-color: blanchedalmond;
+  padding: 0.5rem;
+  border-bottom: 2px solid #000;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* nav a,
+nav a:visited {
+  color: #000;
+} */
+/* same as */
+nav a:any-link {
+  color: #000;
+}
+
+/* nav a:hover,
+nav a:focus {
+  color: hsla(0, 53%, 51%, 0.6);
+} */
+/* same as */
+nav :is(a:hover, a:focus) {
+  color: hsla(229, 94%, 50%, 0.856);
+}
+
+nav a:active {
+  color: darkmagenta;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+footer {
+  bottom: 0;
+}
+
+/* || PROFILE CARD */
+.card {
+  scroll-margin-top: 7rem;
+  width: min(100%, 350%);
+  background-color: #eee;
+  border: 2px solid black;
+  border-radius: 23px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:target {
+  border: 2px solid palevioletred; /*use to highlight whatever was selected*/
+}
+
+.card figure {
+  display: flex;
+  flex-direction: column nowrap;
+}
+
+.card img {
+  border: 5px double #333;
+  border-radius: 50%;
+}
+
+.card img[alt] {
+  /*adds a red border to all that have an alt attribute, 
+  you can also use [.card img:not([alt]) for those without the alt attribute*/
+  border: 7px solid red;
+}
+
+.card figcaption {
+  font-weight: bolder;
+  font-size: 2rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.card figcaption::after {
+  content: "👚";
+  display: block;
+}
+
+.card figcaption::first-letter {
+  font-size: 3rem;
+}
+
+/* || SMALL */
+@media screen and (min-width: 576px) {
+  main {
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 1rem;
+  }
+
+  .card {
+    width: min(100%, 400px);
+  }
+
+  .card:last-child {
+    order: -1;
+  }
+}
+/* || MEDIUM */
+@media screen and (min-width: 576px) {
+  /* nav {
+    display: none;
+  }, this is not displaying the nav bar after this size */
+
+  .card {
+    width: min(100%, 325px);
+  }
+
+  .card figure {
+    flex-flow: column-reverse; /* sends the names of the profile at the top of the picture*/
+  }
+  /* 
+  .card figcaption {
+    margin: 0.1em 0;
+  } */
+
+  .card p {
+    margin-top: 1rem;
+  }
+}
+
+/* || LARGE */
+@media screen and (min-width: 992px) {
+  .card {
+    width: min(100%, 400px);
+  }
+
+  .card:nth-child(2) {
+    order: -1;
+  }
+}
+
+/* || XL*/
+@media screen and (min-width: 1200px) {
+  .card {
+    width: min(
+      calc(33% - 1rem),
+      200px
+    ); /* this allows the images to grow not beyond their pixels of 202*/
+  }
+}
+
+/* || MOBILE DEICE LANDSCAPE*/
+@media screen and (min-width: 425px) and (min-aspect-ratio: 7/4) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  nav {
+    display: none;
+  }
+  main {
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+  .card {
+    width: min(cal(33% - 0.25rem), 200px);
+  }
+  .card figcaption,
+  card p {
+    font-size: 1.25rem;
+  }
+}

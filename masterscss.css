@@ -1,0 +1,72 @@
+/* div{
+    color: brown;
+} */
+
+
+/* classes use . before class name */
+/* use classes to separate css of divs */
+
+
+.firstDiv{
+    color: bisque;
+}
+
+.secondDiv{
+    color: blueviolet;
+}
+
+
+
+/* ids use # before class name */
+
+#singleout{
+    color: firebrick;
+    text-decoration: line-through;
+}
+
+
+/*    * overides most of the css applied except for ids, not usually used */
+*{
+    color: black;
+}
+
+
+
+/* read on the various types of selectors */
+
+
+/* json siblings - any data next to each other */
+
+h3 + ul{
+    border: 4px dotted purple;
+}
+
+
+
+/* descendants  */
+
+li a {
+    color: red;
+}
+
+
+
+/* attributes */
+li a[href="www.facebook.com"]{
+    color: blue;
+    border: 5px solid orange;
+}
+
+
+/* specifity, which tags have a higher hieracy  */
+
+
+li{
+    color: red;
+}
+.topitems{
+    color: blue;
+}
+#two{
+    border: 3px solid black;
+}

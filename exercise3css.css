@@ -1,0 +1,53 @@
+body{
+    background-color: aquamarine;
+}
+h1{
+    border: 1px solid black;
+    font-family: cursive;
+}
+h2{
+    color: purple;
+}
+input{
+    border: 5px solid rgb(44, 152, 160);
+}
+div p{
+    background: #ff54ca;
+}
+#itemone{
+    border: 5px solid gray;
+    width: 800px;
+    height: 400px;
+}
+a{
+    color: red;
+}
+#itemtwo{
+    text-decoration: overline;
+    color: purple;
+}
+.exit{
+    background-color: blue;
+    border: 4px dashed yellow;
+}
+a:visited{
+    color: greenyellow;
+}
+/* p{
+    font-family: monospace;
+    font-weight: 200;
+    font-style: italic;
+    text-align: right;
+    font-size: 2.0em;
+} */
+body{
+    font-size: 20px;
+}
+ol{
+    font-family: 'BhuTuka Expanded One', cursive;
+}
+p {
+    font-family: 'ThaoSaoRegular';
+    font-weight: normal;
+    font-style: normal;
+ }

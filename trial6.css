@@ -1,0 +1,11 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  min-height: 100vh;
+  background-color: rgb(235, 181, 175);
+  background-image: url("png-transparent-splash-water-drop-water-photography-drop-color.png"),
+    linear-gradient(to left #666, #64bea3);
+  background-repeat: repeat-y no-repeat;
+  background-position: right center;
+  background-size: 20%;
+}

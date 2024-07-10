@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- controls the size of your website on different devices, always there by default -->
+    <meta name="description" content="Your Decription">
+    <meta name="author" content="Julian">
+    <meta name="keywords" content="HTML, Tutorials">
+    <link rel="stylesheet" href="trial1.css">
+    <title>Trial for All HTML</title>
+</head>
+<body>
+
+    <a href="#input">Input types</a>
+    <a href="mailto:julian249@gmail.com">Mail to THEch</a>
+
+    <h2>Grid</h2>
+    <div class="grid-container">
+        <div class="grid-item" 
+        style="background: rgb(75, 177, 180);
+        grid-column: 1/3;
+        grid-row: 1/3;">11</div>
+        <div class="grid-item" 
+        style="background: rgb(160, 95, 104);
+        grid-area: 2/1/span 2/span 3;">12</div>
+        <div class="grid-item" 
+        style="background: rgb(241, 238, 46);">13</div>
+        <div class="grid-item" 
+        style="background: rgb(60, 240, 75);">14</div>
+        <div class="grid-item" 
+        style="background: rgb(194, 66, 233);">15</div>
+        <div class="grid-item" 
+        style="background: rgb(76, 76, 77);">16</div>
+    </div>
+
+
+    <hr>
+    <h2>Flexbox</h2>
+    <div class="container">
+        <div class="container-item" style="order: 9;
+        flex: 5 1 100px;
+        align-self: flex-start;">A</div>
+        <div class="container-item" style="order: 5;
+        flex-grow: 1;
+        flex-shrink: 3;
+        flex-basis: 100px;
+        align-self: flex-end;">B</div>
+        <div class="container-item" style="order: 6;
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 100px;
+        align-self: center;">C</div>
+        <div class="container-item" style="order: 7;">D</div>
+        <div class="container-item" style="line-height: 100px;
+        order: 10;
+        flex-grow: 1;
+        flex-shrink: 3;
+        flex-basis: 100px;">E</div>
+        <div class="container-item" style="order: 1;">F</div>
+        <div class="container-item" style="order: 2;">G</div>
+        <div class="container-item" style="order: 8;">H</div>
+        <div class="container-item" style="order: 3;">I</div>
+        <div class="container-item" style="order: 13;
+        flex-grow: 1;
+        flex-basis: 100px;">J</div>
+        <div class="container-item" style="flex: 1 4 100px;">K</div>
+        <div class="container-item">L</div>
+    </div>
+   
+   <hr>
+    <h2>Movements (Animations, Movements etc)</h2>
+    <input type="SUBMIT" class="submit-button">
+
+
+    <h2 class="title">Videos</h2>
+    <video src="How to Become a Frontend Developer in 2022 (Full Roadmap).mp4" poster="front end.PNG" controls width="750">Front End Roadmap</video>
+    
+
+    <h2>Lists</h2>
+    <ol type="i">
+        <li>Apples</li>
+        <li>Pineapples</li>
+        <li>Berries</li>
+        <li>Mangoes</li>
+        <li>Grapes</li>
+        <li>Cherries</li>
+        <li>Water melon</li>
+    </ol>
+
+    <ul>
+        <li>Carrots</li>
+    </ul>
+
+    <dl>
+        <dt>Oranges</dt>
+        <dd>- They are usually orange in color, with a some weet test</dd>
+    </dl>
+    
+
+    <h2 id="contact">Tables</h2>
+    <table>
+        <thead>
+            <caption>List of Numbers</caption>
+                <tr>
+                    <th>Numbers</th>
+                    <th>Words</th>
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">1</td>
+                <td>one</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>two</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>three</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>four</td>
+            </tr>
+    </table>
+    <hr>
+
+
+    <h2>Block Elements and Inline Elements</h2>
+    <h4>Block Elements</h4>
+    The take up the entire length of the line
+    <p>paragram</p>
+    <p>paragram</p>
+    <p>paragram</p>
+    <h4>Inline Elements</h4>
+    The take up only the required lingth of the line e.g <br>
+   <a href="#">Link1</a> 
+   <a href="#">Link2</a> 
+   <a href="#">Link3</a> 
+
+
+   <h2>Spans and Divs</h2>
+   <h4>Spans</h4>
+   These are inline Elements
+   <span>span1</span>
+   <span>span2</span>
+   <span>span3</span>
+   <h4>Divs</h4>
+   These are block Elements
+   <div>div1</div>
+   <div>div2</div>
+   <div>div3</div>
+
+
+   <h2 id="input">Input Types</h2>
+   <input type="text" value="enter your name"><p></p>
+   <input type="date"><p></p>
+   <input type="email"><p></p>
+   <input type="password"><p></p>
+   <input type="submit"><p></p>
+   <input type="file"><p></p>
+   <input type="range"><p></p>
+   <input name="chb" type="checkbox">
+   <input name="chb" type="checkbox">
+   <input name="chb" type="checkbox">
+   <input name="chb" type="checkbox">Allows multiple selections<br>
+   <input name="btn" type="radio">
+   <input name="btn" type="radio">
+   <input name="btn" type="radio">
+   <input name="btn" type="radio">
+   <input name="btn" type="radio">doesn't Allows multiple selections<br><p></p>
+   <textarea name="" id="" cols="30" rows="10">text area</textarea><br><p></p>
+   <form action=""></form>
+
+
+   <h2>iFrames</h2>
+   embeds another website in your page
+   <p></p>
+   <iframe src="https://www.google.com" frameborder="0" width="350" height="500">Try again</iframe>
+
+
+   <h2>Meta Tags</h2>
+   used in the head of the html.
+
+
+   <h2>Lables</h2>
+
+
+
+
+   <hr>
+   <p></p>
+   <h3>CSS Selectors</h3>
+   <a href="https://www.google.com" id="google-link" target="_blank">Google Home</a>
+
+   <ul>
+    <li>Expected</li>
+    <li><ol>Not expected</ol></li>
+    <li>Required</li>
+    <li>
+        <ol>
+            <li>Trying this</li>
+        </ol>
+    </li>
+    <li>
+        <ol>
+            <li>Trying this out</li>
+        </ol>
+    </li>
+    <li>Option</li>
+   </ul>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Ut necessitatibus veritatis culpa soluta voluptates cupiditate vero veniam architecto velit eveniet 
+    id aliquam deleniti odit rem atque laboriosam possimus accusantium rerum, 
+    corporis incidunt? Est error culpa aliquid illo nihil quae adipisci&nbsp;laboriosam natus quis ipsam 
+    quaerat magnam asperiores earum eveniet velit, ad placeat autem iste facilis! Illum in inventore sunt 
+    ducimus libero aliquid totam deserunt! Incidunt inventore excepturi vel, sequi omnis corrupti veritatis quae laudantium, 
+    ullam nobis sed dolor impedit expedita rerum exercitationem. Deleniti incidunt deserunt blanditiis minima veritatis 
+    laborum dolorum saepe voluptatem, eaque nostrum alias cupiditate pariatur voluptas quisquam labore explicabo fugit possimus, 
+    sit perspiciatis dignissimos ut asperiores animi voluptatum maxime! Esse laudantium, commodi unde architecto dolor nostrum, 
+    eaque at, velit maxime corporis vel est. Suscipit est voluptate accusamus dolores minima. 
+    Est expedita deserunt enim autem natus temporibus quibusdam quia esse aut maxime. 
+    Maiores delectus, praesentium corrupti quas aspernatur ipsam.
+</p>
+<h3 id="about-me">May be not always</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptate eligendi deserunt nemo voluptatum ad culpa? 
+    Quasi dignissimos necessitatibus laudantium nulla commodi at pariatur impedit eligendi alias sequi. 
+    Reprehenderit fugit repudiandae temporibus? Maiores dolorum animi atque ipsa repellat officiis pariatur perferendis, 
+    voluptatem magnam praesentium ipsam ex nobis, earum molestiae porro odit nam. Nobis doloremque, 
+    facere illum minus facilis quia laboriosam perspiciatis est sit aperiam sed, repellendus, 
+    vel necessitatibus neque reprehenderit? Inventore voluptatem reprehenderit explicabo quod, 
+    dolores iste laborum iusto fugit culpa perferendis? Provident doloribus rem, 
+    quae nemo asperiores dolor inventore ut natus sequi ab aliquam neque, quam libero eum. 
+    Aut enim magni in veritatis quae soluta esse recusandae necessitatibus ea exercitationem, odio animi, 
+    dolorum saepe, quasi quaerat? Quae quasi laudantium doloribus laborum pariatur rerum ut vel a, 
+    delectus facere rem explicabo sunt adipisci fugiat, maxime corrupti quas minus dignissimos temporibus ex, 
+    molestiae provident aliquam! Animi exercitationem doloremque obcaecati sint explicabo, 
+    error natus necessitatibus illum excepturi est corrupti consequuntur repudiandae minima quo, 
+    quos perferendis fugiat rerum non amet iusto velit? Error veniam asperiores tenetur deleniti 
+    quaerat nulla alias temporibus recusandae, modi quasi nesciunt, 
+    odit nihil saepe corporis amet incidunt ipsum ullam quisquam suscipit dolore sed, 
+    debitis sequi mollitia. Libero tempore vitae odio asperiores consequatur similique, 
+    doloribus quam blanditiis natus ducimus tempora maiores harum tenetur ut nostrum fugit repellendus 
+    quidem impedit vel accusantium cumque ea! Sint voluptatum aliquam, aspernatur ratione necessitatibus 
+    delectus quisquam nam reiciendis autem, odit perspiciatis illum eveniet qui a. Sed eum voluptatibus, 
+    quam vero sint hic nesciunt consequuntur autem beatae omnis totam, error dolores. 
+    Quis tempora dicta et deserunt sint, debitis nulla ea eligendi, assumenda necessitatibus, 
+    quas cumque iste soluta quos ad tenetur voluptates blanditiis cupiditate vitae? 
+    Fugit rerum asperiores incidunt aut id sequi. Accusantium consectetur laborum ipsa. 
+    Libero sunt labore ipsam optio corrupti excepturi reiciendis mollitia, omnis vero!</p>
+<a href="#">Jump to Top</a>
+
+   
+</body>
+</html>

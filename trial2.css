@@ -1,0 +1,49 @@
+nav {
+  border: 2px solid #333;
+  border-radius: 2rem; /* border radius responsible for the round shape*/
+  margin: 0 auto 1rem;
+  max-width: 600px; /* if not set, the whole nav occupies the whole pages from left to right*/
+  font-size: 3rem;
+  line-height: 7rem;
+}
+
+h2 {
+  padding: 1rem;
+  background: gold;
+  border-radius: 2rem 2rem 0 0;
+}
+
+ul {
+  /* list-style-type: none; */
+}
+
+li nav {
+  border-top: 1px solid #333;
+}
+
+li a {
+  display: block;
+}
+
+li a :hover,
+li a:focus {
+  background: #777;
+  color: bisque;
+  cursor: pointer;
+}
+
+/*round the last child to have a round border*/
+li:last-child a {
+  border-radius: 0 0 2rem 2rem;
+}
+
+table,
+tr,
+th,
+td,
+caption {
+  border: 1px solid #555;
+  font-family: "Courier New", Courier, monospace;
+  border-collapse: collapse;
+  padding: 0.5rem;
+}

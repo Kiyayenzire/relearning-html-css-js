@@ -1,0 +1,46 @@
+/* dfghsfdhsg */
+/* sbnvdnsvns
+ghasdghsdgh
+sdjksjhs */
+
+/* selected tag {
+    property: Value;
+} */
+
+h1{
+    color: rgb(218, 32, 193);
+}
+
+li{
+    color: #0895a8;
+}
+
+h3{
+    color: yellow;
+}
+
+h2{
+    color: rgba(152, 225,87, 0.7);
+}
+
+body{
+    background:url(https://www.vecteezy.com/photo/2142937-beautiful-tropical-beach-background) ;
+    /* background-repeat: repeat; */
+}
+
+div{
+    background-color: beige;
+    border-color:red ;
+    border-width: 10px;
+    border-style: dashed;
+}
+
+p{
+    color: rgb(255, 042, 221);
+}
+/* this applies to all elements in and out side the dive */
+
+span{
+    background: #0895a8;
+    color: black;
+}

@@ -1,0 +1,9 @@
+#table1 {
+  border: 19px solid white;
+  border-collapse: collapse;
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+}
+td {
+  height: 100px;
+}

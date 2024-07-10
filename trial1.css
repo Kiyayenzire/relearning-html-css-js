@@ -1,0 +1,177 @@
+/* Anatomy of cssselector {
+    property: value;
+    property1: value;
+} */
+
+.submit-button {
+  margin: 20px 10px;
+  padding: 10px 15px;
+  border: none;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: khaki;
+  background: cadetblue;
+  /* transition: background 2s ease-in-out 1s; */
+  transition: all 500ms ease;
+}
+
+.submit-button:hover {
+  background: rgb(218, 53, 122);
+  padding: 20px 30px;
+  /* color: black; */
+  transform: translate();
+}
+
+.grid-container {
+  background-color: beige;
+  margin: 10px;
+  height: 500px;
+  display: grid;
+  /* grid-template-columns: 20px 50px 30px; */
+  grid-template-columns: auto auto auto;
+  /* grid-template-rows: 50px 250px; */
+  grid-template-rows: auto auto;
+  /* justify-content: space-evenly;
+    align-content: end; */
+  /* grid: column gap 150px; */
+  /* gap: 100px 200px; */
+}
+
+.grid-item {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  width: 70px;
+  line-height: 40px;
+  margin: 10px;
+}
+
+.container {
+  background-color: peachpuff;
+  margin: 10px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column-reverse; */
+  flex-wrap: wrap;
+  /* flex-wrap: nowrap; */
+  /* flex-wrap: wrap-reverse; */
+  /* justify-content: flex-end; */
+  /* justify-content: space-between; */
+  justify-content: space-around;
+  /* align-items:flex-end; */
+  align-items: baseline;
+  /* align-items: stretch; */
+}
+.container-item {
+  background: mediumturquoise;
+  color: red;
+  font-size: 29px;
+  text-align: center;
+  width: 70px;
+  line-height: 50px;
+  margin: 20px;
+}
+
+/* .title {
+    color:olivedrab
+} */
+
+#contact {
+  color: blueviolet;
+}
+
+h4:hover {
+  color: brown;
+}
+
+/* li:first-child {
+    color: green;
+}
+li:last-child {
+    color: yellow;
+} */
+
+/* li:only-child{
+    color: cyan;
+} */
+
+li:nth-child(3) {
+  color: bisque;
+}
+
+#google-link:link {
+  color: rgb(0, 255, 106);
+}
+
+#google-link:visited {
+  color: deeppink;
+}
+
+/* general sibling selector, elements that follow each other*/
+h3 + a {
+  color: darkblue;
+}
+
+/* general sibling selector, sharing the same parent */
+textarea ~ button {
+  color: greenyellow;
+}
+
+/* child selector direct to the selector */
+ul > li {
+  color: darkolivegreen;
+}
+
+/* descendant selector */
+/* ul li {
+    color: gold;
+} */
+
+/* atrtibute selector */
+h2[class="title"] {
+  color: blueviolet;
+}
+
+/* you can add multiple classes to html using white spaces using class~=(class name)*/
+h2[class~="article"] {
+  color: darkgoldenrod;
+}
+
+/* using an image */
+/* body { */
+/* background repeat is the default */
+/* background: url("31-316487_landscape-wallpaper-hd.jpg"); */
+/* background-image: url("48C23B78-1DD8-B71B-0B497F159E15A370.jpg"); */
+/* background-repeat: no-repeat; */
+/* background-size: cover; */
+/* } */
+
+#about-me {
+  /* animation-name: red-to-black;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse; */
+  -webkit-animation: red-to-black 4s linear 0s 2 alternate-reverse;
+  -moz-animation: red-to-black 4s linear 0s 2 alternate-reverse;
+  -ms-animation: red-to-black 4s linear 0s 2 alternate-reverse;
+  -o-animation: red-to-black 4s linear 0s 2 alternate-reverse;
+}
+@keyframes red-to-black {
+  0% {
+    background: red;
+    transform: translate(0px, 0px);
+  }
+  47% {
+    background: yellow;
+    transform: translate(10px, 10px);
+  }
+  100% {
+    background: black;
+    transform: translate(20px, 20px);
+  }
+}

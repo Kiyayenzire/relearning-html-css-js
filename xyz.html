@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/xyz.css">
+    <!-- <script src="js/xyz.js"></script> -->
+    <!-- <script src="js/xyz1.js"></script> -->
+    <!-- <script src="js/xyz2.js"></script> -->
+    <!-- <script src="js/xyz3.js"></script> -->
+    <script src="js/xyz4.js"></script>
+    <title>Javaacript</title>
+</head>
+<body>
+    <h1>Final Major Javascript Study</h1>
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+      <hr>
+      <br>
+      <p>
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+      </p>
+
+      <hr>
+      <br>
+      <p>
+        <form action="" method="get" class="form-example">
+            <div class="form-example">
+              <label for="name">Enter your name: </label>
+              <input type="text" name="name" id="name" required>
+            </div>
+            <br>
+            <div class="form-example">
+              <label for="email">Enter your email: </label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-example">
+              <input type="submit" value="Subscribe!">
+            </div>
+          </form>
+      </p>
+      <br>
+      <hr>
+
+      <p>
+        <button onclick="
+          const randomNumber = Math.random()
+          let computerMove = ''
+          if (randomNumber >= 0 && randomNumber < 1/3) {
+            computerMove = 'rock'
+          }else if (randomNumber >= 1/3 && randomNumber < 2/3) {
+            computerMove = 'paper'
+          }else if (randomNumber >= 2/3 && randomNumber < 1) {
+            computerMove = 'scissors'
+          }
+          console.log (computerMove)
+          let result = ''
+          if (computerMove === 'rock') {
+              result = 'Tie'
+          }else if (computerMove === 'paper') {
+            result = 'You Lose'
+          } else if (computerMove === 'scissors') {
+            result = 'You win'
+          }
+          alert (`you picked rock, computer picked ${computerMove}. ${result}`)
+          ">Rock</button>
+
+
+        <button onclick="
+          const randomNumber = Math.random()
+          let computerMove = ''
+          if (randomNumber >= 0 && randomNumber < 1/3) {
+            computerMove = 'rock'
+          }else if (randomNumber >= 1/3 && randomNumber < 2/3) {
+            computerMove = 'paper'
+          }else if (randomNumber >= 2/3 && randomNumber < 1) {
+            computerMove = 'scissors'
+          }
+          console.log (computerMove)
+          let result = ''
+          if (computerMove === 'rock') {
+              result = 'You win'
+          }else if (computerMove === 'paper') {
+            result = 'Tie'
+          } else if (computerMove === 'scissors') {
+            result = 'You Lose'
+          }
+          alert (`you picked paper, computer picked ${computerMove}. ${result}`);
+        ">Paper</button>
+
+
+        <button onclick="
+        const randomNumber = Math.random()
+            let computerMove = ''
+            if (randomNumber >= 0 && randomNumber < 1/3) {
+              computerMove = 'rock'
+            }else if (randomNumber >= 1/3 && randomNumber < 2/3) {
+              computerMove = 'paper'
+            }else if (randomNumber >= 2/3 && randomNumber < 1) {
+              computerMove = 'scissors'
+            }
+            console.log (computerMove)
+            let result = ''
+            if (computerMove === 'rock') {
+                result = 'You Lose'
+            }else if (computerMove === 'paper') {
+              result = 'You win'
+            } else if (computerMove === 'scissors') {
+              result = 'Tie'
+            }
+            alert (`you picked scissors, computer picked ${computerMove}. ${result}`)"
+        >Scissors</button>
+      </p>
+
+      <p>
+        <script>
+
+        </script>
+      </p>
+    
+</body>
+</html>
